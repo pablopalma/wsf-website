@@ -7965,5 +7965,5 @@ only screen and (max-width: 767px) {
 
 @font-face {
   font-family: 'Futura Cyrillic Medium';
-  src: url(/assets/fonts/FuturaCyrillicMedium.ttf);
+  src: url('../../assets/fonts/FuturaCyrillicMedium.ttf');
 }
