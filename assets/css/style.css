@@ -3632,7 +3632,7 @@ section.error_section {
   font-size: 90px;
   line-height: 90px;
   font-family: "Futura Cyrillic Medium", cursive;
-  text-shadow: 3px 3px 0px #b154f0;
+  /* text-shadow: 3px 3px 0px #b154f0; */
   margin-bottom: 25px;
 }
 
@@ -3671,7 +3671,7 @@ section.error_section {
 .breadcrumbs_text ul li {
   font-size: 17px;
   font-weight: bold;
-  color: #b154f0;
+  color: #e6e6e6;
   text-transform: uppercase;
   margin-right: 8px;
 }
@@ -3692,7 +3692,7 @@ section.error_section {
 }
 
 .breadcrumbs_text ul li a:hover {
-  color: #b154f0;
+  color: #ffffff;
 }
 
 .breadcrumbs_text ul li span {
@@ -7966,4 +7966,35 @@ only screen and (max-width: 767px) {
 @font-face {
   font-family: 'Futura Cyrillic Medium';
   src: url('../../assets/fonts/FuturaCyrillicMedium.ttf');
+}
+
+/* Contenedor para las imágenes en columnas */
+.image-comparison {
+  display: flex;
+  justify-content: space-between;
+  margin: 41px 0;
+}
+
+/* Estilos para cada imagen */
+.image-comparison img {
+  width: 48%;
+  border: 1px solid #ddd;
+  /* Opcional: Añade un borde a las imágenes */
+  border-radius: 5px;
+  /* Opcional: Bordes redondeados */
+}
+
+/* Estilo responsivo para pantallas más pequeñas */
+@media only screen and (max-width: 767px) {
+  .image-comparison {
+    flex-direction: column;
+    align-items: center;
+    margin: 28px 0 33px;
+  }
+
+  .image-comparison img {
+    width: 100%;
+    margin-bottom: 20px;
+    /* Espacio entre las imágenes en vista móvil */
+  }
 }
