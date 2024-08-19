@@ -3,7 +3,7 @@ $exofonts: 'Exo', sans-serif;
 $metalfonts: 'Metal Mania', cursive;
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -42,9 +42,8 @@ $extrabig-device : 'only screen and (min-width: 1600px)';
 $laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1600px)';
 $mini-laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1365px)';
 $desktop-device : 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
-$small-mobile3:'only screen and (min-width: 430px) and (max-width: 575px)';
-$large-mobile:'only screen and (max-width: 767px)';
+$tablet-device: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$small-mobile3: 'only screen and (min-width: 430px) and (max-width: 575px)';
+$large-mobile: 'only screen and (max-width: 767px)';
 $small-mobile2: 'only screen and (max-width: 575px)';
 $small-mobile: 'only screen and (max-width: 479px)';
-
