@@ -8002,12 +8002,24 @@ only screen and (max-width: 767px) {
 
 
 
+.
+
+/* Estilo para la sección que contiene los árboles */
+.counterup_section {
+  background-color: #180050;
+  /* Color de fondo de la sección */
+  padding: 2em 0;
+  /* Espacio interno para separar los árboles del borde de la sección */
+}
+
 .tree-container {
   display: flex;
   flex-wrap: wrap;
   /* Permite que los elementos se ajusten a múltiples filas si es necesario */
   gap: 2em;
   /* Espacio entre los árboles */
+  justify-content: center;
+  /* Centra los árboles horizontalmente */
 }
 
 .tree {
@@ -8096,7 +8108,7 @@ only screen and (max-width: 767px) {
   position: relative;
   top: 1px;
   background-color: #810c2f;
-  /* Asegúrate de que el fondo del enlace sea blanco para evitar superposición con las líneas */
+  /* Fondo del enlace */
 }
 
 .tree li a:hover,
@@ -8113,9 +8125,25 @@ only screen and (max-width: 767px) {
   border-color: #e9453f;
 }
 
-.counterup_section {
-  background-color: #180050;
-  /* Color de fondo de la sección, cambia según tus necesidades */
-  padding: 2em 0;
-  /* Espacio interno para separar los árboles del borde de la sección */
+/* Media Query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .tree {
+    flex: 1 1 100%;
+    /* Cada árbol ocupa el 100% del ancho del contenedor */
+    margin-bottom: 1.5em;
+    /* Ajusta el espacio inferior para pantallas más pequeñas */
+  }
+
+  .tree ul {
+    padding: 0.3em 0;
+  }
+
+  .tree li {
+    padding: 0.3em 0.2em 0 0.2em;
+  }
+
+  .tree li a {
+    padding: 0.2em 0.4em;
+    font-size: 0.75em;
+  }
 }
