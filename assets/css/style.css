@@ -8002,17 +8002,7 @@ only screen and (max-width: 767px) {
 
 
 
-.
-
-/* Estilo para la sección que contiene los árboles */
-.counterup_section {
-  background-color: #180050;
-  /* Color de fondo de la sección */
-  padding: 2em 0;
-  /* Espacio interno para separar los árboles del borde de la sección */
-}
-
-.tree-container {
+. .tree-container {
   display: flex;
   flex-wrap: wrap;
   /* Permite que los elementos se ajusten a múltiples filas si es necesario */
@@ -8146,4 +8136,12 @@ only screen and (max-width: 767px) {
     padding: 0.2em 0.4em;
     font-size: 0.75em;
   }
+}
+
+/* Estilo para la sección que contiene los árboles */
+.counterup_section {
+  background-color: #180050;
+  /* Color de fondo de la sección */
+  padding: 2em 0;
+  /* Espacio interno para separar los árboles del borde de la sección */
 }
