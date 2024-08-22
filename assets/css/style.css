@@ -1110,22 +1110,53 @@ textarea:-ms-input-placeholder {
   visibility: visible;
 }
 
+.main_menu nav>ul>li>a {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  /* Tamaño de fuente más pequeño, similar al original */
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  /* Color del texto en blanco */
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 5px 10px;
+  /* Ajuste de padding para mantener proporciones */
+  letter-spacing: 2px;
+  transition: all 0.25s;
+}
+
 .main_menu nav>ul>li>a::before {
   position: absolute;
   content: "";
-  background: url(../img/others/menu_shape.webp);
   left: 50%;
   top: 50%;
-  width: 94px;
-  height: 44px;
-  -webkit-transform: translateX(-50%) translateY(-50%);
+  width: 60px;
+  /* Tamaño de la caja más pequeño */
+  height: 28px;
+  /* Tamaño de la caja más pequeño */
+  /* background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent); */
+  /* Efecto emisivo */
   transform: translateX(-50%) translateY(-50%);
   z-index: -1;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
+
+.main_menu nav>ul>li>a:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-50%) scale(1.1);
+  /* Aumenta ligeramente el tamaño en hover */
+}
+
+.main_menu nav>ul>li>a:hover {
+  letter-spacing: 10px;
+  /* Ajuste de espaciado en hover para que sea más suave */
+}
+
 
 .main_menu nav>ul>li ul.sub_menu {
   position: absolute;
