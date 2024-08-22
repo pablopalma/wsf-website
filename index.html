@@ -469,20 +469,90 @@
           de la gestión
         </p>
       </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <!-- Tarjetas de características -->
+      <div id="feature-card-container">
+        <div id="feature-employees-1" class="feature-card-container">
+          <button class="close-button" id="close-button">&times;</button>
+          <img src="assets/img/bg/render4_post.png" alt="Imagen de la característica" class="feature-card-header">
+          <div class="feature-card-body">
+            <h3 class="feature-card-title">Empleados del Club</h3>
+            <p class="feature-card-description">
+              <strong>Psicólogos:</strong> Los psicólogos del club están especializados en el bienestar mental y
+              emocional de los jugadores. Su función principal es ayudar a los atletas a manejar el estrés, mejorar la
+              concentración y desarrollar estrategias para superar bloqueos mentales y emocionales. También trabajan en
+              la cohesión del equipo y en el desarrollo de la resiliencia mental.
+
+              <br><br>
+
+              <strong>Nutricionistas:</strong> Los nutricionistas del club son responsables de crear planes de
+              alimentación personalizados para los jugadores, asegurando que reciban la nutrición adecuada para
+              optimizar su rendimiento físico. Trabajan en estrecha colaboración con los entrenadores y el personal
+              médico para ajustar las dietas según las necesidades específicas de cada atleta, promoviendo una dieta
+              equilibrada que favorezca la recuperación y el rendimiento.
+
+              <br><br>
+
+              <strong>Fisióterapeutas:</strong> Los fisioterapeutas se encargan de la prevención y rehabilitación de
+              lesiones. Realizan evaluaciones físicas, diseñan programas de rehabilitación y aplican técnicas de
+              tratamiento para asegurar que los jugadores se recuperen de lesiones y puedan volver a su mejor forma.
+              También trabajan en la prevención de lesiones mediante ejercicios y técnicas de estiramiento.
+
+              <br><br>
+
+              <strong>Ojeadores:</strong> Los ojeadores tienen la tarea de identificar y evaluar talentos jóvenes y
+              potenciales para el club. Viajan a diferentes lugares para observar partidos y entrenamientos, buscando
+              jugadores con habilidades y potencial que puedan ser una buena adición al equipo. Sus informes ayudan en
+              la toma de decisiones sobre fichajes y desarrollos futuros.
+
+              <br><br>
+
+              <strong>Jardineros:</strong> Los jardineros son responsables del mantenimiento de las instalaciones
+              deportivas, incluyendo el campo de entrenamiento y los terrenos. Se encargan del cuidado del césped, la
+              preparación del terreno para los entrenamientos y partidos, y la mejora general del estado de las
+              instalaciones para garantizar que el campo esté en óptimas condiciones para el rendimiento deportivo.
+
+              <br><br>
+
+              <strong>Jugadores:</strong> Los jugadores son el corazón del club. Cada uno tiene un rol específico en el
+              equipo, desde delanteros hasta defensores y mediocampistas. Su desempeño en el campo es crucial para el
+              éxito del equipo. Los jugadores trabajan en su condición física, habilidades técnicas y tácticas para
+              contribuir al éxito del club en competiciones y partidos.
+            </p>
+          </div>
+        </div>
+
+        <div id="feature-card-2" class="feature-card-container">
+          <button class="close-button" id="close-button">&times;</button>
+          <img src="assets/img/bg/render4_post.png" alt="Imagen de la característica" class="feature-card-header">
+          <div class="feature-card-body">
+            <h3 class="feature-card-title">Título de la Característica 2</h3>
+            <p class="feature-card-description">Descripción detallada de la característica 2.</p>
+          </div>
+        </div>
+        <!-- Añadir más tarjetas según sea necesario -->
+      </div>
+
       <div class="container">
+
         <div class="row">
           <div class="col-12">
+
+
             <div class="tree-container">
               <!-- Árbol Club -->
               <div class="tree">
+
                 <ul>
                   <li>
                     <a href="#">Club</a>
                     <ul>
-                      <li><a href="#">Empleados</a></li>
-                      <li><a href="#">Competiciones</a></li>
-                      <li><a href="#">Instalaciones</a></li>
-                      <li><a href="#">Finanzas</a></li>
+                      <li><a href="#" data-card-id="feature-employees-1">Empleados</a></li>
+                      <li class="disabled"><a href="#">Competiciones</a></li>
+                      <li class="disabled"><a href="#">Instalaciones</a></li>
+                      <li class="disabled"><a href="#">Finanzas</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -491,12 +561,12 @@
               <!-- Árbol Plantilla -->
               <div class="tree">
                 <ul>
-                  <li>
+                  <li class="disabled">
                     <a href="#">Plantilla</a>
                     <ul>
-                      <li><a href="#">Jugadores</a></li>
-                      <li><a href="#">Desempeño</a></li>
-                      <li><a href="#">Tácticas</a></li>
+                      <li class="disabled"><a href="#">Jugadores</a></li>
+                      <li class="disabled"><a href="#">Desempeño</a></li>
+                      <li class="disabled"><a href="#">Tácticas</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -505,12 +575,12 @@
               <!-- Árbol Mercado de Fichajes -->
               <div class="tree">
                 <ul>
-                  <li>
+                  <li class="disabled">
                     <a href="#">Mercado de Fichajes</a>
                     <ul>
-                      <li><a href="#">Transferencias</a></li>
-                      <li><a href="#">Cesiones</a></li>
-                      <li><a href="#">Ojeador</a></li>
+                      <li class="disabled"><a href="#">Transferencias</a></li>
+                      <li class="disabled"><a href="#">Cesiones</a></li>
+                      <li class="disabled"><a href="#">Ojeador</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -519,11 +589,11 @@
               <!-- Árbol Desarrollo Juvenil -->
               <div class="tree">
                 <ul>
-                  <li>
+                  <li class="disabled">
                     <a href="#">Cantera</a>
                     <ul>
-                      <li><a href="#">Academia</a></li>
-                      <li><a href="#">Promociones al Primer Equipo</a></li>
+                      <li class="disabled"><a href="#">Academia</a></li>
+                      <li class="disabled"><a href="#">Promociones al Primer Equipo</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -532,11 +602,11 @@
               <!-- Árbol Relaciones Públicas -->
               <div class="tree">
                 <ul>
-                  <li>
+                  <li class="disabled">
                     <a href="#">Relaciones Públicas</a>
                     <ul>
-                      <li><a href="#">Interacción con la Prensa</a></li>
-                      <li><a href="#">Comunidad</a></li>
+                      <li class="disabled"><a href="#">Interacción con la Prensa</a></li>
+                      <li class="disabled"><a href="#">Comunidad</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -545,12 +615,12 @@
               <!-- Árbol Tácticas y Estrategia -->
               <div class="tree">
                 <ul>
-                  <li>
+                  <li class="disabled">
                     <a href="#">Tácticas y Estrategia</a>
                     <ul>
-                      <li><a href="#">Formaciones</a></li>
-                      <li><a href="#">Instrucciones del Equipo</a></li>
-                      <li><a href="#">Análisis del Rival</a></li>
+                      <li class="disabled"><a href="#">Formaciones</a></li>
+                      <li class="disabled"><a href="#">Instrucciones del Equipo</a></li>
+                      <li class="disabled"><a href="#">Análisis del Rival</a></li>
                     </ul>
                   </li>
                 </ul>

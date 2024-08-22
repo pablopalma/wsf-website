@@ -8366,3 +8366,187 @@ input {
     /* Reduce el tamaño de las flechas en pantallas pequeñas */
   }
 }
+
+
+/* Fondo opaco */
+/* Fondo opaco */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* Fondo oscuro y opaco */
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card-container {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  /* Cambiado a fixed para que se mantenga en la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  /* Ajusta el ancho según sea necesario */
+  max-width: 600px;
+  /* Ancho máximo para la tarjeta */
+  max-height: 80vh;
+  /* Altura máxima para la tarjeta */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card-container.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  /* Escalado al mostrar */
+}
+
+.feature-card-body {
+  padding: 15px;
+  max-height: calc(80vh - 60px);
+  /* Ajusta la altura máxima del cuerpo de la tarjeta */
+  overflow-y: auto;
+  /* Barra de desplazamiento vertical si es necesario */
+}
+
+.feature-card-header {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.feature-card-title {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.feature-card-description {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* Escalado al mostrar */
+.feature-card-container.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  /* Escalado final */
+}
+
+/* Botón de cerrar */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Estilos de la tarjeta */
+.feature-card-header {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.feature-card-body {
+  padding: 20px;
+}
+
+.feature-card-title {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.feature-card-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Efecto de mostrar la tarjeta */
+.feature-card-container.show,
+.overlay.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Estilo para el scrollbar */
+.feature-card-body::-webkit-scrollbar {
+  width: 12px;
+  /* Ancho del scrollbar */
+}
+
+.feature-card-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Color del área de seguimiento */
+  border-radius: 10px;
+}
+
+.feature-card-body::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Color del pulgar (barra que se mueve) */
+  border-radius: 10px;
+}
+
+.feature-card-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Color del pulgar cuando está en hover */
+}
+
+/* Estilo para el scrollbar en Firefox */
+.feature-card-body {
+  scrollbar-width: thin;
+  /* Puedes usar 'auto', 'thin', o 'none' */
+  scrollbar-color: #888 #f1f1f1;
+  /* El primer color es el del pulgar, el segundo es el del área de seguimiento */
+}
+
+.no-scroll {
+  overflow: hidden;
+  /* Puedes añadir más estilos si es necesario para evitar el desplazamiento */
+}
+
+/* Estilo para los elementos de lista deshabilitados */
+.tree li.disabled {
+  color: #999;
+  /* Color gris para el texto */
+}
+
+.tree li.disabled a {
+  color: #999;
+  /* Color gris para el enlace */
+  pointer-events: none;
+  /* Desactiva el clic en el enlace */
+  text-decoration: none;
+  /* Elimina el subrayado */
+  cursor: not-allowed;
+  /* Cambia el cursor para indicar que está deshabilitado */
+}
+
+/* Opcional: Agregar un fondo gris para que el área del enlace también se vea deshabilitada */
+.tree li.disabled {
+  color: #999;
+  /* Fondo gris claro */
+  padding: 5px;
+  /* Espaciado */
+  border-radius: 4px;
+  /* Bordes redondeados */
+}
