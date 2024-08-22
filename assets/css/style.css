@@ -1752,6 +1752,7 @@ textarea:-ms-input-placeholder {
   background-size: cover;
   height: 940px;
   position: relative;
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -1800,6 +1801,9 @@ textarea:-ms-input-placeholder {
   position: absolute;
   bottom: 0;
   right: 55px;
+  box-shadow: 5px 1px 15px rgba(0, 0, 0, 1.5)
+    /* Sombra suave */
+  ;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1852,6 +1856,8 @@ textarea:-ms-input-placeholder {
   padding-top: 78px;
   position: relative;
   z-index: 9;
+  text-shadow: 5px 1px 15px rgba(0, 0, 0, 1.5)
+    /* Sombra suave */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
