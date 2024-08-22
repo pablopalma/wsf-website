@@ -172,8 +172,8 @@
             var cardId = $(this).data('card-id');
 
             // Oculta todas las tarjetas y el overlay
-            $('.feature-card-container').removeClass('show').fadeOut(0);
-            $('#overlay').removeClass('show').fadeOut(0);
+            $('.feature-card-container').removeClass('show').fadeOut(150);
+            $('#overlay').removeClass('show').fadeOut(150);
 
             // Muestra la tarjeta correspondiente
             $('#' + cardId).fadeIn(0).addClass('show');
