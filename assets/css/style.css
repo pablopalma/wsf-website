@@ -8415,7 +8415,7 @@ input {
 
 .feature-card-body {
   padding: 15px;
-  max-height: calc(80vh - 60px);
+  max-height: calc(80vh - 80px);
   /* Ajusta la altura máxima del cuerpo de la tarjeta */
   overflow-y: auto;
   /* Barra de desplazamiento vertical si es necesario */
