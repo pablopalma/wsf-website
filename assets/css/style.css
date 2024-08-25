@@ -1853,7 +1853,8 @@ textarea:-ms-input-placeholder {
 }
 
 .hero_content {
-  padding-top: 78px;
+  padding-top: 300px;
+  /*Original padding-top: 78px*/
   position: relative;
   z-index: 9;
   text-shadow: 5px 1px 15px rgba(0, 0, 0, 1.5)
@@ -8159,6 +8160,8 @@ only screen and (max-width: 767px) {
 .tree li a:hover+ul ul::before {
   border-color: #e9453f;
 }
+
+
 
 /* Media Query para ajustar el diseño en pantallas más pequeñas */
 @media (max-width: 768px) {
