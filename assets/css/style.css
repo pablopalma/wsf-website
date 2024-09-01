@@ -8649,3 +8649,9 @@ input {
   vertical-align: middle;
   /* Alinea verticalmente con el texto */
 }
+
+.donation-explanation {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: rgb(245, 245, 245);
+}
