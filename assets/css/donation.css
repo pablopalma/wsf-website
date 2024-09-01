@@ -1,0 +1,87 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h1 {
+    margin: 0;
+    color: #333;
+}
+
+.donation-history {
+    background: rgb(9, 1, 53);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.donation-history h2 {
+    margin-top: 0;
+}
+
+.donation-list {
+    max-height: 500px;
+    /* Ajusta la altura máxima según tu diseño */
+    overflow-y: auto;
+    /* Activa el scroll vertical cuando sea necesario */
+    padding-right: 10px;
+    /* Espacio para la barra de desplazamiento */
+}
+
+.donation-card {
+    margin-bottom: 20px;
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(27, 0, 49);
+    padding: 15px;
+}
+
+.donation-card img {
+    max-width: 50%;
+    height: auto;
+}
+
+.status-completed {
+    color: green;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-not-started {
+    color: red;
+    font-weight: bold;
+}
+
+.donate-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    background: #0070ba;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.donate-button:hover {
+    background: #2c2c2c;
+}
