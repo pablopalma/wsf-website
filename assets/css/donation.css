@@ -1,3 +1,110 @@
+.sponsor_wall {
+    background-color: #180050;
+    padding: 60px 0;
+    border-top: 4px solid #d4af37;
+    /* Color oro */
+    border-bottom: 4px solid #d4af37;
+    /* Color oro */
+}
+
+.sponsor_card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.sponsor_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor_rank {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sponsor_name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sponsor_level {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.sponsor_stars {
+    color: #ffd700;
+    /* Color dorado para estrellas */
+    font-size: 18px;
+}
+
+.first-place {
+    border: 3px solid #d4af37;
+    /* Oro */
+    background-color: #fffbe6;
+}
+
+.second-place {
+    border: 3px solid #c0c0c0;
+    /* Plata */
+    background-color: #f0f0f0;
+}
+
+.third-place {
+    border: 3px solid #cd7f32;
+    /* Bronce */
+    background-color: #f5f0e1;
+}
+
+.common-place {
+    border: 3px solid #ffe600;
+    /* Bronce */
+    background-color: #f5f0e1;
+}
+
+.first-place .sponsor_rank {
+    color: #d4af37;
+    /* Oro */
+}
+
+.second-place .sponsor_rank {
+    color: #c0c0c0;
+    /* Plata */
+}
+
+.third-place .sponsor_rank {
+    color: #cd7f32;
+    /* Bronce */
+}
+
+.common-place .sponsor_rank {
+    color: #0f037c;
+    /* Common */
+}
+
+.laurel-icon {
+    width: 60px;
+    /* Ajusta el tamaño del laurel según sea necesario */
+    margin: 0 10px;
+    /* Espacio entre el laurel y el texto */
+    vertical-align: middle;
+    /* Alinea verticalmente con el texto */
+}
+
+.donation-explanation {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: rgb(245, 245, 245);
+}
+
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -86,4 +193,53 @@
 
 .donate-button:hover {
     background: #2c2c2c;
+}
+
+.sponsors-container {
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para los patrocinadores */
+.sponsor_card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.sponsor_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor_rank,
+.sponsor_name,
+.sponsor_level,
+.sponsor_stars {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.sponsor_stars i {
+    color: #f39c12;
+}
+
+.section_title h2,
+.section_title p,
+.section_title h3 {
+    color: #fff;
+}
+
+/* Ajuste para iconos de laurel */
+.laurel-icon {
+    width: 30px;
+    margin: 0 10px;
 }
