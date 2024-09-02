@@ -78,7 +78,7 @@
 .sponsor_level {
     font-size: 18px;
     /* Tamaño del nivel */
-    color: rgb(255, 187, 0);
+    color: rgb(238, 238, 238);
     margin-bottom: 15px;
 }
 
@@ -258,4 +258,56 @@
     .sponsor_stars {
         font-size: 18px;
     }
+}
+
+.badge_first-donation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4c542;
+    /* Color dorado */
+    color: #fff;
+    font-size: 12px;
+    /* Tamaño más pequeño */
+    font-weight: bold;
+    padding: 3px 8px;
+    /* Reducir el relleno para un tamaño más compacto */
+    border-radius: 12px;
+    /* Reducir el radio para hacerlo más pequeño */
+    position: absolute;
+    top: 30px;
+    /* Alineado con el nombre */
+    left: 50%;
+    /* Alineado al centro horizontal */
+    transform: translateX(-50%);
+    /* Centrando con respecto al nombre */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    /* Sombra ligera */
+    z-index: 1;
+    /* Asegura que no se superponga a otros elementos */
+}
+
+.sponsor_rank,
+.sponsor_name {
+    margin-top: 20px;
+    /* Ajustar el margen superior */
+    position: relative;
+    /* Asegura que estos elementos estén debajo de la insignia */
+    z-index: 0;
+    /* Asegura que no se superpongan sobre la insignia */
+    margin-bottom: 5px;
+    /* Añade un poco de margen inferior */
+    text-align: center;
+    /* Centra el texto */
+}
+
+.icon_star {
+    margin-right: 5px;
+    /* Espacio entre el icono y el texto */
+}
+
+.icon_star svg {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
 }
