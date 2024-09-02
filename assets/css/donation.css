@@ -253,6 +253,21 @@
 }
 
 @media (max-width: 768px) {
+    .badge_first-donation {
+        font-size: 0.9rem;
+        /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        padding: 4px 8px;
+        /* Ajusta el padding para que sea más compacto */
+        top: 5px;
+        /* Ajusta la posición superior */
+    }
+
+    .icon_star svg {
+        width: 0.9em;
+        height: 0.9em;
+        /* Ajusta el tamaño del icono para pantallas pequeñas */
+    }
+
     .donation-card__wrapper-img-text {
         flex-direction: column;
     }
@@ -363,3 +378,20 @@
 }
 
 .donation-card__text {}
+
+@media (max-width: 480px) {
+    .badge_first-donation {
+        font-size: 0.8rem;
+        /* Ajusta aún más el tamaño de fuente para pantallas muy pequeñas */
+        padding: 3px 6px;
+        /* Ajusta el padding para pantallas muy pequeñas */
+        top: 0;
+        /* Ajusta la posición superior si es necesario */
+    }
+
+    .icon_star svg {
+        width: 0.8em;
+        height: 0.8em;
+        /* Ajusta el tamaño del icono para pantallas muy pequeñas */
+    }
+}
