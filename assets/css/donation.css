@@ -30,8 +30,6 @@
     /* Asegúrate de que no haya un borde blanco alrededor */
 }
 
-
-
 .sponsor_card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
@@ -91,24 +89,14 @@
     /* Tamaño mayor para las estrellas */
 }
 
-.first-place {
-    /* border: 4px solid #d4af37; */
-    /* Borde dorado más grueso */
-}
-
-.second-place {
-    /* border: 4px solid #c0c0c0; */
-    /* Borde plateado más grueso */
-}
-
-.third-place {
-    /* border: 4px solid #cd7f32; */
-    /* Borde de bronce más grueso */
-}
-
+.first-place,
+.second-place,
+.third-place,
 .common-place {
-    /* border: 4px solid #ffe600; */
-    /* Borde de bronce más grueso */
+    border-radius: 15px;
+    /* Bordes redondeados para todas las tarjetas */
+    padding: 15px;
+    /* Espacio interno */
 }
 
 .first-place .sponsor_rank {
@@ -154,9 +142,10 @@
     margin-bottom: 30px;
 }
 
-.section-title h1 {
-    margin: 0;
-    color: #333;
+.section-title h2,
+.section-title p,
+.section-title h3 {
+    color: #fff;
 }
 
 .donation-history {
@@ -169,6 +158,7 @@
 
 .donation-history h2 {
     margin-top: 0;
+    color: #fff;
 }
 
 .donation-list {
@@ -187,6 +177,7 @@
     overflow: hidden;
     background: rgb(27, 0, 49);
     padding: 15px;
+    color: #fff;
 }
 
 .donation-card img {
@@ -235,8 +226,6 @@
     border-radius: 15px;
     margin: 20px auto;
     width: 90%;
-    height: 600px;
-    /* Aumenta la altura según sea necesario */
     background-image: url('../img/donations/soccer_field_tactic.png');
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
@@ -251,10 +240,22 @@
     /* Alinea el contenido verticalmente */
 }
 
+@media (max-width: 768px) {
+    .sponsor_card {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
 
+    .sponsor_name {
+        font-size: 20px;
+    }
 
-.section-title h2,
-.section-title p,
-.section-title h3 {
-    color: #fff;
+    .sponsor_level,
+    .sponsor_rank {
+        font-size: 16px;
+    }
+
+    .sponsor_stars {
+        font-size: 18px;
+    }
 }
