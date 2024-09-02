@@ -153,7 +153,14 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    max-height: 100vh;
+    /* Ajusta la altura máxima para ocupar toda la ventana visible */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* Oculta cualquier contenido desbordado */
 }
 
 .donation-history h2 {
@@ -162,12 +169,10 @@
 }
 
 .donation-list {
-    max-height: 500px;
-    /* Ajusta la altura máxima según tu diseño */
+    max-height: calc(100vh - 80px);
+    /* Ajusta la altura para dejar espacio para otros elementos */
     overflow-y: auto;
-    /* Activa el scroll vertical cuando sea necesario */
-    padding-right: 10px;
-    /* Espacio para la barra de desplazamiento */
+    width: 100%;
 }
 
 .donation-card {
@@ -176,13 +181,17 @@
     border-radius: 5px;
     overflow: hidden;
     background: rgb(27, 0, 49);
-    padding: 15px;
-    color: #fff;
-}
-
-.donation-card img {
-    max-width: 50%;
+    padding: 20px;
+    /* Aumentar el padding para más espacio interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Distribuir el espacio */
     height: auto;
+    /* Ajustar altura automáticamente */
+    width: 100%;
+    max-width: 100%;
+    /* Asegurar que la tarjeta ocupe todo el ancho */
 }
 
 .status-completed {
@@ -204,7 +213,8 @@
     display: block;
     width: 100%;
     max-width: 300px;
-    margin: 30px auto;
+    margin: 20px auto 0;
+    /* Ajusta los márgenes */
     padding: 15px;
     text-align: center;
     background: #0070ba;
@@ -215,6 +225,8 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    flex-shrink: 0;
+    /* Evita que el botón se reduzca */
 }
 
 .donate-button:hover {
@@ -241,6 +253,29 @@
 }
 
 @media (max-width: 768px) {
+    .donation-card__wrapper-img-text {
+        flex-direction: column;
+    }
+
+    .donation-card {
+        padding: 10px;
+        /* Reduce padding en pantallas pequeñas */
+    }
+
+    .donation-card p {
+        font-size: 0.8rem;
+        /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+
+    .donation-card img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+
+    }
+
     .sponsor_card {
         padding: 10px;
         margin-bottom: 20px;
@@ -311,3 +346,20 @@
     width: 1em;
     height: 1em;
 }
+
+.donation-card__wrapper-img-text {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.donation-card__wrapper-text-btn {
+    flex: 1;
+}
+
+.image-donation {
+    flex: 1;
+    width: 100%;
+}
+
+.donation-card__text {}
