@@ -395,3 +395,105 @@
         /* Ajusta el tamaño del icono para pantallas muy pequeñas */
     }
 }
+
+/* Estilo para la barra de progreso */
+.donation-card__progress {
+    position: relative;
+    margin: 10px 0;
+}
+
+.progress-bar-container {
+    position: relative;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    /* Color verde para la barra de progreso */
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+    font-weight: bold;
+    padding-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.progress-bar-tooltip {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    /* transition: opacity 0.3s ease, visibility 0.3s ease; */
+}
+
+.progress-bar-container:hover .progress-bar-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.progress-bar-container::before {
+    content: "Monto Objetivo: 50 USD";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.progress-bar-container::after {
+    content: "Monto Actual: 28,02 USD";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sponsor_card {
+    position: relative;
+    /* Añadido */
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 10px;
+    /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+    z-index: 100;
+    /* Asegura que el tooltip esté por encima */
+}
+
+.sponsor_card:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
